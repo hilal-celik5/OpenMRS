@@ -12,7 +12,7 @@ public class US_403_Logout extends BaseDriver {
     @Test
     public void successfulLogout() {
 
-        Tests.US_402_Login.successfulLogin();
+        US_402_Login.successfulLogin();
         US_401_402_403_POM elements = new US_401_402_403_POM();
 
         Assert.assertTrue(elements.verifyLocation.getText().contains("Inpatient Ward"));
