@@ -14,8 +14,8 @@ public class US_404_RegisterPatient extends BaseDriver {
     @Test
     public void regPatient() {
 
-        US_404_POM elements = new US_404_POM();
         US_401_402_403_POM element = new US_401_402_403_POM();
+        US_404_POM elements = new US_404_POM();
 
         Random random = new Random();
         int num = random.nextInt(7);
