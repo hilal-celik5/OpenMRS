@@ -24,9 +24,9 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
-//    @AfterClass
-//    public void tearDown() {
-//        ElementActions.Wait(3);
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown() {
+        ElementActions.Wait(3);
+        driver.quit();
+    }
 }
