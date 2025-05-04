@@ -1,7 +1,7 @@
 package Tests;
 
 import Pages.US_401_402_403_POM;
-import Pages.US_404_POM;
+import Pages.US_404_405_POM;
 import Utility.BaseDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -15,7 +15,7 @@ public class US_404_RegisterPatient extends BaseDriver {
     public void regPatient() {
 
         US_401_402_403_POM element = new US_401_402_403_POM();
-        US_404_POM elements = new US_404_POM();
+        US_404_405_POM elements = new US_404_405_POM();
 
         Random random = new Random();
         int num = random.nextInt(7);
