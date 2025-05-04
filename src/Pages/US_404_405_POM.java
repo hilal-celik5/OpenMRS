@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US_404_POM {
+public class US_404_405_POM {
 
-    public US_404_POM() {
+    public US_404_405_POM() {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
@@ -73,4 +73,16 @@ public class US_404_POM {
 
     @FindBy(css = "[class='float-sm-right']>em")
     public WebElement patientID;
+
+    @FindBy(css = "[class='icon-user small']")
+    public WebElement userIcon;
+
+    @FindBy(css = "[href='/openmrs/adminui/myaccount/myAccount.page']")
+    public WebElement myAccountLink;
+
+    @FindBy(css = "[href='/openmrs/adminui/myaccount/changePassword.page']")
+    public WebElement changePassword;
+
+    @FindBy(css = "[href='/openmrs/adminui/myaccount/changeDefaults.page']")
+    public WebElement myLanguages;
 }
