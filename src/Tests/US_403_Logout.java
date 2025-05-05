@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class US_403_Logout extends BaseDriver {
 
     // This test verifies that a logged-in user can successfully log out
-    // and is redirected back to the login page
+    // and is redirected back to the login page.
     @Test
     public void successfulLogout() {
 
