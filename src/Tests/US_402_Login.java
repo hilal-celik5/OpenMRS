@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class US_402_Login extends BaseDriver {
 
-    // This test verifies a successful login attempt
+    // This test verifies a successful login attempt.
     @Test
     public static void successfulLogin() {
 

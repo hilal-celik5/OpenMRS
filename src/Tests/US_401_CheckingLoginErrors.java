@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class US_401_CheckingLoginErrors extends BaseDriver {
 
     // This test verifies that login fails when no location is selected
-    // and incorrect user credentials are entered
+    // and incorrect user credentials are entered.
     @Test(dataProvider = "invalidCredentials")
     public void incorrectLogin(String username, String password) {
 
