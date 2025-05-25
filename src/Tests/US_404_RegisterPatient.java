@@ -11,6 +11,11 @@ import java.util.Random;
 
 public class US_404_RegisterPatient extends BaseDriver {
 
+    /**
+     * This test verifies the patient registration process.
+     * It fills out the registration form with valid data and
+     * confirms that the patient is successfully registered.
+     */
     @Test
     public void regPatient() {
 
