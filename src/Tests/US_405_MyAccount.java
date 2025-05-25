@@ -11,6 +11,11 @@ import java.util.Random;
 
 public class US_405_MyAccount extends BaseDriver {
 
+    /**
+     * This test verifies the functionality of the 'My Account' page.
+     * It checks that the user can access the page and that important
+     * elements like 'Change Password' and 'My Languages' are visible.
+     */
     @Test
     public void myAccount() {
 
