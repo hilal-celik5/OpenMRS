@@ -2,14 +2,14 @@ package Tests;
 
 import Pages.US_401_402_403_POM;
 import Pages.US_404_405_POM;
-import Utility.BaseDriver;
+import Utility.GuestBaseTest;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Random;
 
-public class US_405_MyAccount extends BaseDriver {
+public class US_405_MyAccount extends GuestBaseTest {
 
     /**
      * This test verifies the functionality of the 'My Account' page.

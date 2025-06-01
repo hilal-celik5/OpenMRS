@@ -1,14 +1,14 @@
 package Tests;
 
 import Pages.US_401_402_403_POM;
-import Utility.BaseDriver;
 import Utility.ElementActions;
+import Utility.GuestBaseTest;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class US_401_CheckingLoginErrors extends BaseDriver {
+public class US_401_CheckingLoginErrors extends GuestBaseTest {
 
     // This test verifies that login fails when no location is selected
     // and incorrect user credentials are entered.
@@ -24,9 +24,7 @@ public class US_401_CheckingLoginErrors extends BaseDriver {
         ElementActions.clickElement(elements.exploreOpenMRS2);
         ElementActions.clickElement(elements.enterTheOpenMRS2);
         elements.username.sendKeys(username);
-        ElementActions.Wait(2);
         elements.password.sendKeys(password);
-        ElementActions.Wait(2);
         elements.loginButton.click();
 
         Assert.assertTrue(elements.locationErrorMessage.getText().contains("You must choose a location!"));
@@ -34,6 +32,8 @@ public class US_401_CheckingLoginErrors extends BaseDriver {
         driver.navigate().refresh();
         elements.username.sendKeys(username);
         elements.password.sendKeys(password);
+
+        ElementActions.Wait(2);
         elements.inpatientWard.click();
         elements.loginButton.click();
 
@@ -45,7 +45,7 @@ public class US_401_CheckingLoginErrors extends BaseDriver {
     Object[][] invalidCredentials() {
         return new Object[][] {
                 {"adMin", "ADmin123"},
-                {"ADMIN", "Admin123"},
+                {"ADMIN", "Admin123"},    // {"ADMIN", "Admin123"} giriş yaptı
                 {"", "Admin123"},
                 {"admin", ""},
                 {"admin", "admin123"},
