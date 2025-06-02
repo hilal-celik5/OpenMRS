@@ -1,6 +1,6 @@
 package Tests;
 
-import Pages.US_407_410_POM;
+import Pages.US_407_408_410_POM;
 import Utility.LoggedInBaseTest;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ public class US_407_DeletePatient extends LoggedInBaseTest {
     @Test(dataProvider = "patientInformation")
     public void deletePatient(String patient) {
 
-        US_407_410_POM elements = new US_407_410_POM();
+        US_407_408_410_POM elements = new US_407_408_410_POM();
 
         elements.findPatientRecordButton.click();
         elements.searchInput.sendKeys(patient);
