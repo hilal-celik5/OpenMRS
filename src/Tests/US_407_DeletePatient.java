@@ -14,11 +14,11 @@ public class US_407_DeletePatient extends LoggedInBaseTest {
         US_407_408_410_POM elements = new US_407_408_410_POM();
 
         elements.findPatientRecordButton.click();
-        elements.searchInput.sendKeys("1000NG");
+        elements.searchInput.sendKeys("1000T9");
 
         try {
             wait.until(ExpectedConditions.visibilityOf(elements.noMatchMessage));
-            System.out.println("Hasta bulunamadı: " + "1000NG");
+            System.out.println("Hasta bulunamadı: " + "1000T9");
             return;
         } catch (Exception e) {
             System.out.println("Hasta siliniyor...");
