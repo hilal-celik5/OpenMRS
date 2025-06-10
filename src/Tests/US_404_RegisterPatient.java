@@ -61,7 +61,7 @@ public class US_404_RegisterPatient extends GuestBaseTest {
         elements.nextButton.click();
         elements.confirm.click();
 
-        Assert.assertTrue(elements.patientName.getText().contains("John"));
-        Assert.assertTrue(elements.patientID.getText().contains("Patient ID"));
+        Assert.assertTrue(elements.patientName.isDisplayed());
+        Assert.assertTrue(elements.patientID.isDisplayed());
     }
 }

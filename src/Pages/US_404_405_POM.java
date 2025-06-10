@@ -71,7 +71,7 @@ public class US_404_405_POM {
     @FindBy(css = "[class='PersonName-givenName']")
     public WebElement patientName;
 
-    @FindBy(css = "[class='float-sm-right']>em")
+    @FindBy(css = "[class='float-sm-right']>span")
     public WebElement patientID;
 
     @FindBy(css = "[class='icon-user small']")
