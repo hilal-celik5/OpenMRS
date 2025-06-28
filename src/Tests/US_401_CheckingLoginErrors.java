@@ -45,7 +45,7 @@ public class US_401_CheckingLoginErrors extends GuestBaseTest {
     Object[][] invalidCredentials() {
         return new Object[][] {
                 {"adMin", "ADmin123"},
-                {"ADMIN", "Admin123"},    // {"ADMIN", "Admin123"} giriş yaptı
+                {"ADMIN", "Admin123"},
                 {"", "Admin123"},
                 {"admin", ""},
                 {"admin", "admin123"},
